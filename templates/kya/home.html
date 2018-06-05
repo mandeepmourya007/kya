@@ -1,0 +1,69 @@
+<!html>
+<html>
+<head>
+<title>Know your Aptitude</title>
+<style type="text/css">
+.c1{color : blue; font-weight:bold; font-size:48;align:left;}
+.c2{color: skyblue; font-weight:italic; font-size:18; align:Right;}
+.c3{color: white; font-weight:italic; font-size:18;align:center;}
+
+.c4{color: white; font-weight:italic; font-size:18;align:Right;}
+</style>
+
+<body>
+  <table border="5">
+
+      <tr>
+          <th class="c1" bgcolor="skyblue" width="10%" align="left"> Know Your Aptitude <legend class="c4" align="right">Login id <input type="text"  id="login" value="username or email" disabled="disabled" onmouseover="abled"/></legend><legend class="c3" align="right">Password<input type="password"  id="login"/></legend><legend align="right"><input type="button" value="Signup" /><input type="submit" value="Login" /></legend>  <p class="c3" align="center">Best place to test your preparation</p> </th>
+
+      </tr>
+</table>
+<div id="f1" align="right" >
+
+</div>
+<p id="f2"></p>
+
+<legend align="right"><input type="button"   id="start"  value="starttest" onclick=" timeinterval()"/>
+<input type="button" id="stop" value="stoptest" onclick=" stoptest()" align/></legend>
+<script type="text/javascript">
+// document.getElementById("f2").innerHTML=new Date();
+var d2=60,d1=19,x,intervalid;
+
+function decrement2()
+{
+d2--;
+document.getElementById("f1").innerHTML=d1+":"+d2;
+if(d2==0)
+{
+d2=60;
+d1--;
+}
+/*if(x==1)
+{
+document.getElementById("start").disabled="disabled";
+}*/
+if(d1==-1&&d2==59)
+ {
+ alert("oops your time is over </br> submit now");
+ }
+
+}
+
+function timeinterval()
+{
+x=1;
+intervalid=setInterval(decrement2,1000);
+
+}
+function stoptest()
+{
+clearInterval(intervalid);
+}
+
+
+
+
+ </script>
+</body>
+</head>
+</html>

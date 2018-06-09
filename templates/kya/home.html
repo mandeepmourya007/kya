@@ -1,69 +1,46 @@
-<!html>
-<html>
-<head>
-<title>Know your Aptitude</title>
-<style type="text/css">
-.c1{color : blue; font-weight:bold; font-size:48;align:left;}
-.c2{color: skyblue; font-weight:italic; font-size:18; align:Right;}
-.c3{color: white; font-weight:italic; font-size:18;align:center;}
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-.c4{color: white; font-weight:italic; font-size:18;align:Right;}
-</style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-<body>
-  <table border="5">
+    <link rel="stylesheet"  type="text/css" href="{% static "kya/css/demo.css" %}">
+    <script src="{% static    "kya/js/script.js" %}"></script>
 
-      <tr>
-          <th class="c1" bgcolor="skyblue" width="10%" align="left"> Know Your Aptitude <legend class="c4" align="right">Login id <input type="text"  id="login" value="username or email" disabled="disabled" onmouseover="abled"/></legend><legend class="c3" align="right">Password<input type="password"  id="login"/></legend><legend align="right"><input type="button" value="Signup" /><input type="submit" value="Login" /></legend>  <p class="c3" align="center">Best place to test your preparation</p> </th>
+    <title>Kya</title>
+  </head>
+  <body>
+    <nav class="navbar" navbar-default navbar-fixed-top>
+    <div class="navbar">
+      <p class="nv">Know Your Aptitude </p><legend align="right"><a href="account/login" class="nv2" >Login</a>/<a href="account/signup" class="nv2" >Signup</a>
+       <div id="sidebar" class="nv2">
+      <div class="toogle-btn" onclick="tooglesidebar()" >
+          <span color></span>
+          <span></span>
+          <span></span>
+      </div>
+      <ul>
+        <li><legend align="right"><a href="login.html" class="nv2" >Login</a>/<a href="signup.html" class="nv2" >Signup</a></li>
+       <li ><a class="nv2"href="file:///C:/Users/AMITPARSHAD/Documents/know%20your%20aptitude%20bootstap/home.html#">Home</a></li>
+       <li ><a class="nv2"href="#">About</a></li>
+       <li><a class="nv2" href="#">Contact us</a></li>
+       <li ><a class="nv2"href="#">Quiz</a></li>
+       <li><a class="nv2" href="#">Gate Cs</a></li>
+       <li><a class="nv2" href="#">C programming</a></li>
+   </ul>
+  </div>
+      </legend>
+      <legend><p2 class="nv1">Best place for your preparation</p2></legend>
 
-      </tr>
-</table>
-<div id="f1" align="right" >
 
-</div>
-<p id="f2"></p>
-
-<legend align="right"><input type="button"   id="start"  value="starttest" onclick=" timeinterval()"/>
-<input type="button" id="stop" value="stoptest" onclick=" stoptest()" align/></legend>
-<script type="text/javascript">
-// document.getElementById("f2").innerHTML=new Date();
-var d2=60,d1=19,x,intervalid;
-
-function decrement2()
-{
-d2--;
-document.getElementById("f1").innerHTML=d1+":"+d2;
-if(d2==0)
-{
-d2=60;
-d1--;
-}
-/*if(x==1)
-{
-document.getElementById("start").disabled="disabled";
-}*/
-if(d1==-1&&d2==59)
- {
- alert("oops your time is over </br> submit now");
- }
-
-}
-
-function timeinterval()
-{
-x=1;
-intervalid=setInterval(decrement2,1000);
-
-}
-function stoptest()
-{
-clearInterval(intervalid);
-}
+    </div></nav>
 
 
 
-
- </script>
-</body>
-</head>
+    </body>
 </html>

@@ -9,9 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <link rel="stylesheet"  type="text/css" href="{% static "account/css/log_in.css" %}">
+    <link rel="stylesheet"  type="text/css" href="{% static  "account/css/log_in.css"  %}">
 
-    <script src="script.js"></script>
+    <script src="{% static  "js/script.js"  %}"></script>
 
 
     <title> Kya-Login!</title>
@@ -19,24 +19,16 @@
   <body>
 
 
-    <div class="loginbox2">
-      <p class="nv6">Create Your Account</p>
-      <div class="form">
-
+    <div class="loginbox">
+      <p3 class="nv4">Login to your Account</p3>
+      <div class="forml">
       <form class="register-form">
-
-        <input type="text" placeholder="First Name"/>
-        <input type="text" placeholder="Middle Name"/>
-        <input type="text" placeholder="Last name"/>
-        <input type="text" placeholder="Email-id"/>
-        <input type="text" placeholder="Pasword"/>
-
-        <input type="text" placeholder="Confirm Password"/><br/>
-
-        <button >Signup</button><br/>
+        <input type="text" placeholder="email-id or username"/>
+        <input type="text" placeholder="Password"/><br/>
+        <button >Login</button><br/>
         <div class="nv5">
-        <a class="nv7" href="login.html">Already have an account</a><br/>
-
+        <a class="nv5" href="#">Forgot your Password !</a><br/>
+        <a class="nv5" href="account/sign_up">Don't have an account !</a>
         </div>
       </form>
       </div>
@@ -49,7 +41,7 @@
       </div>
       <ul>
         <li><legend align="right"><a href="login.html" class="nv2" >Login</a>/<a href="signup.html" class="nv2" >Signup</a></li>
-       <li ><a class="nv2"href="home.html#">Home</a></li>
+       <li ><a class="nv2"href="file:///C:/Users/AMITPARSHAD/Documents/know%20your%20aptitude%20bootstap/home.html#">Home</a></li>
        <li ><a class="nv2"href="#">About</a></li>
        <li><a class="nv2" href="#">Contact us</a></li>
        <li ><a class="nv2"href="#">Quiz</a></li>

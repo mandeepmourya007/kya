@@ -1,0 +1,121 @@
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(i18.jpg);
+	margin:2px;
+	padding:0;
+
+	background-position: center;
+	background-size:cover;
+
+	font-family:sans-serif;
+	background opacity:.5;
+}
+
+.form{
+	position: relative;
+	text-align: center;
+	top:30%;
+	top:10px;
+
+
+}
+.forml{
+	position: relative;
+	text-align: center;
+	top:20%;
+
+
+}
+
+.forml input{
+	font-family:"Roboto",sans-serif;
+	outline:1;
+	width:100%;
+	margin:0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size:14px;
+	border-width: 2px;
+}
+
+
+.form input{
+	font-family:"Roboto",sans-serif;
+	outline:1;
+	width:100%;
+	margin:0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size:14px;
+	border-width: 2px;
+}
+
+
+.loginbox{
+width:280px;
+height:350px;
+background:url(i16.jpg);
+color:white;
+top:50%;
+left:50%;
+position:absolute;
+transform:translate(-50%,-50%);
+box-sizing:borderbox;
+}
+
+.loginbox2{
+width:280px;
+height:500px;
+background:url(i16.jpg);
+color:white;
+top:50%;
+left:50%;
+position:absolute;
+transform:translate(-50%,-50%);
+box-sizing:borderbox;
+}
+
+#sidebar {
+position : fixed;
+width:150px;
+height:100%;
+border-radius: 5% 10% 0% 0%;
+background:url(i4.jpg);
+left:-150px;
+transition: all 500ms linear;
+}
+
+
+ #sidebar.active{
+left: 0px;
+}
+
+#sidebar ul li {
+color:white;
+list-style:none;
+padding:15px 10px;
+border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+
+
+
+#sidebar .toogle-btn{
+position:absolute;
+left:170px;
+top:20px;
+color:white;
+}
+
+#sidebar .toogle-btn span{
+display:block;
+width:30px;
+height:5px;
+background:white;
+margin:3px 0px;
+}
+
+
+.nv2{color :white; font-weight:italic; font-size:15px;text-align:left;}
+.nv5{color :black; font-weight:italic; font-size:15px;text-align:center;}
+.nv6{color :black; font-weight:bold; font-size:25px;text-align:center;}
+.nv7{color :white; font-weight:bold; font-size:15px;text-align:center;}
+.nv4{color :black; font-weight:bold; font-size:20px;text-align:center;}

@@ -16,7 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from .import views
-#from django.contrib.staticfiles.urls import staticfiles_urlpattrens
 from django.conf.urls.static import static
 from django.conf import settings
 urlpatterns = [
@@ -26,6 +25,4 @@ urlpatterns = [
     path('quiz/',include('quiz.urls')),
     path('account/',include('account.urls')),
 ]
-
-#urlpatterns+=staticfiles_urlpattrens()
-urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+urlpatterns+= static(settings.STATIC_URL,DOCUMENT_ROOT= settings.STATIC_ROOT)

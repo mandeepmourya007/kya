@@ -23,9 +23,9 @@
       <p3 class="nv4">Login to your Account</p3>
       <div class="forml">
       <form class="register-form" method="post">
-        {% csrf_token %}
-        <input type="text" placeholder="email-id or username"/>
-        <input type="text" placeholder="Password"/><br/>
+            {% csrf_token %}
+        <input type="text" name=username placeholder="email-id or username"/>
+        <input type="text" name="password"placeholder="Password"/><br/>
         <button >Login</button><br/>
         <div class="nv5">
         <a class="nv5" href="#">Forgot your Password !</a><br/>

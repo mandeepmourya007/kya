@@ -39,8 +39,12 @@
 
 
   </div></nav>
-
-
+{% if request.user.is_authenticated %}
+  <a href="account/logout">Logout</a>
+  <p>{{request.user}}</p>
+{% else %}
+  <a href="account/login">Login</a>
+{% endif %}
 
   </body>
 

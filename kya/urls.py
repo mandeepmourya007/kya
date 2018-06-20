@@ -23,6 +23,6 @@ urlpatterns = [
     path('',views.home),
     path('admin/', admin.site.urls),
     path('quiz/',include('quiz.urls')),
-    path('account/',include('account.urls')),
+    path('account/',include('account.urls'),),
 ]
 urlpatterns+= static(settings.STATIC_URL,DOCUMENT_ROOT= settings.STATIC_ROOT)

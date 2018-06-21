@@ -15,6 +15,13 @@
     <title>Kya</title>
   </head>
   <body>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
   <nav class="navbar" navbar-default navbar-fixed-top>
   <div class="navbar">
     <p class="nv">Know Your Aptitude </p><legend align="right"><a href="account/login" class="nv2" >Login</a>/<a href="account/signup" class="nv2" >Signup</a>

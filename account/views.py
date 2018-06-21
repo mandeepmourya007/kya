@@ -5,6 +5,7 @@ from django.contrib.auth import authenticate,login,logout
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .forms import kyaUser
+from django.contrib import messages
 def sign_up(request):
     if request.method=="POST":
         form=kyaUser(request.POST)
@@ -13,9 +14,11 @@ def sign_up(request):
             p=form.cleaned_data["p1"]
 
             user=User.objects.create_user(username=u_n,password=p)
+            messages.success(request, 'account created')
+            return HttpResponseRedirect(reverse("account:login"))
     else:
         form=kyaUser()
-    return render(request,'account/sign_up.html',{'form':form})
+        return render(request,'account/sign_up.html',{'form':form})
 def log_in(request):
     if request.method=="POST":
         u=request.POST.get("username")
@@ -23,6 +26,7 @@ def log_in(request):
         user=authenticate(request,username=u,password=p)
         if user is not None:
             login(request,user)
+            messages.success(request, 'you are login')
             return HttpResponseRedirect(reverse("home"))
     return render(request,'account/log_in.html')
 def log_out(request):

@@ -1,5 +1,5 @@
 body{
-	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(i18.jpg);
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/i18.jpg');
 	margin:2px;
 	padding:0;
 
@@ -53,7 +53,7 @@ body{
 .loginbox{
 width:280px;
 height:350px;
-background:url(i16.jpg);
+background:url('../images/i16.jpg');
 color:white;
 top:50%;
 left:50%;
@@ -65,8 +65,8 @@ box-sizing:borderbox;
 .loginbox2{
 width:280px;
 height:500px;
-background:url(i16.jpg);
-color:white;
+background:url('../images/i16.jpg');
+color:black;
 top:50%;
 left:50%;
 position:absolute;
